@@ -9,15 +9,19 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-  
+
   <style>
+
+  #map { height: 350px;
+          width: 350px;}
   body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
   }
   p {font-size: 16px;}
-  .margin {margin-bottom: 45px;}
+  .margin {margin-bottom: 45px;
+	}
   .bg-1 { 
       background-color: #1abc9c; /* Green */
       color: #ffffff;
@@ -90,7 +94,7 @@
   <div class="container-fluid bg-1 text-center">
     <div class="row">
       <div class="col-sm-offset-4 col-sm-4">
-          <img src="https://elsemanario.com/wp-content/uploads/2014/05/Confianza-empresarial-INEGI.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+          <img src="https://elsemanario.com/wp-content/uploads/2014/05/Confianza-empresarial-INEGI.jpg" class="img-responsive img-circle margin" style="display:inline" alt="portafolio" width="350" height="350">
        </div>
     </div>
     <div class="row">
@@ -111,7 +115,7 @@
       <hr>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
       <div class="col-sm-offset-4 col-sm-4">
-          <img src="http://noticiasbancarias.com/wp-content/uploads/2012/06/empresa.jpg" class="img-responsive margin" style="display:inline" alt="Bird" width="350" height="350">
+          <img src="http://noticiasbancarias.com/wp-content/uploads/2012/06/empresa.jpg" class="img-responsive margin" style="display:inline" alt="quienes" width="350" height="350">
        </div>
     </div>
   </div>
@@ -126,7 +130,7 @@
     <div class="row">
       <div class="col-sm-4">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <div id="map"></div>
+          <div id="map" class="col-sm-offset-1 img-responsive margin"></div>
       </div>
       <div class="col-sm-4"> 
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -143,28 +147,27 @@
 <footer class="container-fluid bg-4 text-center">
   <p >CORPORACION ABCD <a href="#">TODO LOS DERECHOS RESERVADOS</a></p> 
 </footer>
-   <script>
-      function initMap() {
-        var myLatLng = {lat: -25.363, lng: 131.044};
+    <script type="text/javascript">
 
-        // Create a map object and specify the DOM element for display.
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: myLatLng,
-          scrollwheel: false,
-          zoom: 4
-        });
-
-        // Create a marker and set its position.
-        var marker = new google.maps.Marker({
+var map;
+function initMap() {
+  var myLatLng = {lat: -12.0690764, lng: -77.078437};
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: myLatLng,
+    zoom: 17
+  });
+    // Create a marker and set its position.
+          var marker = new google.maps.Marker({
           map: map,
           position: myLatLng,
-          title: 'Hello World!'
+          title: 'CORPORACION ABCD'
         });
-      }
+}
 
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5w8Rf2Ve4u_ty9fhjR-dJOoJ4FO__ioo&callback=initMap"
-        async defer></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPJVVnxCEt8sfD2qLH75NnO0IlUGDY2LY&callback=initMap">
+    </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/npm.js"></script>
