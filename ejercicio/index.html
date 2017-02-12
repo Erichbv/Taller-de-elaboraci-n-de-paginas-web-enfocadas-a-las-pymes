@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>CORPORACION ABCD</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+
+  }
+  .title {
+  display: block;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3.40em;
+  }
+  
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">CORPORACION ABCD</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#portafolio">PORTAFOLIO</a></li>
+        <li><a href="#quienes">QUIENES SOMOS</a></li>
+        <li><a href="#contactenos">CONTACTENOS</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<section id="portafolio">
+  <div class="container-fluid bg-1 text-center">
+    <div class="row">
+      <div class="col-sm-offset-4 col-sm-4">
+          <img src="https://elsemanario.com/wp-content/uploads/2014/05/Confianza-empresarial-INEGI.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
+       </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <span class="title"> PORTAFOLIO</span>
+          <hr size="3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod empor incididunt ut labore et dolore magna aliqua. 
+        Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Second Container -->
+<section id="quienes">
+  <div class="container-fluid bg-2 text-center">
+    <span class="title">QUIENES SOMOS</span>
+      <hr>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <div class="col-sm-offset-4 col-sm-4">
+          <img src="http://noticiasbancarias.com/wp-content/uploads/2012/06/empresa.jpg" class="img-responsive margin" style="display:inline" alt="Bird" width="350" height="350">
+       </div>
+    </div>
+  </div>
+</section>
+
+<!-- Third Container (Grid) -->
+<section id="contactenos">
+  <div class="container-fluid bg-3 text-center">    
+    <span class="title">CONTACTENOS</span>
+      <hr style="height: 1px; background-color: #6B6B6B">
+    <br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div id="map"></div>
+      </div>
+      <div class="col-sm-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="http://www.asonapfrijol.org/images/joomlart/corporate/contactenos.png" class="img-responsive margin" style="width:100%" alt="Image">
+      </div>
+      <div class="col-sm-4"> 
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <img src="http://h4dm.com/wp-content/uploads/2014/04/confianza-empresarial.jpg" class="img-responsive margin" style="width:100%" alt="Image">
+      </div>
+    </div>
+  </div>        
+</section>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p >CORPORACION ABCD <a href="#">TODO LOS DERECHOS RESERVADOS</a></p> 
+</footer>
+   <script>
+      function initMap() {
+        var myLatLng = {lat: -25.363, lng: 131.044};
+
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: myLatLng,
+          scrollwheel: false,
+          zoom: 4
+        });
+
+        // Create a marker and set its position.
+        var marker = new google.maps.Marker({
+          map: map,
+          position: myLatLng,
+          title: 'Hello World!'
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5w8Rf2Ve4u_ty9fhjR-dJOoJ4FO__ioo&callback=initMap"
+        async defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/npm.js"></script>
+</body>
+</html>
